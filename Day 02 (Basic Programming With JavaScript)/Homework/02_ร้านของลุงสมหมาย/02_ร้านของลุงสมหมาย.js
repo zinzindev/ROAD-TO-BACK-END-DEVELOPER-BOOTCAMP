@@ -9,3 +9,5 @@ Welcome to Sommai 108 Eleven Shop
 console.log('Welcome to Sommai 108 Eleven Shop');
 
 // Dev Lab -> https://school.borntodev.com/course/road-to-back-end-developer-bootcamp/d9dda74e-92fc-4b62-87d8-d20e9387387f/devlab/fcf6b4c2-e048-43bf-bc04-47417943a7c7
+
+// https://www.borntodev.com/devlab/api/tasks/8/share?sharer=68419&passed=0

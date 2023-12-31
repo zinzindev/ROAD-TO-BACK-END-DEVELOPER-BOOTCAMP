@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Day 04 (Basic Programming With JavaScript)</title>
+	</head>
+	<body>
+		<h1>Day 04 (Basic Programming With JavaScript)</h1>
+
+		<script>
+			/*
+			let i = 0;
+			while (i<=10) {
+				console.log(i);
+				i++;
+			}
+			*/
+
+			/*
+			let count = 0
+			let username = prompt('Enter your username:');
+
+			while (username != 'admin') {
+				count++;
+				username = prompt('Enter your username: '+count);
+			}
+
+			console.log('count: ', count);
+			alert('Login success');
+			*/
+
+			// ## Function
+			/*
+			function add(x, y) {
+				return x + y;
+			}
+
+			let result = add(10, 20);
+			console.log('result:', result);
+			*/
+
+			/*
+			function sayHello(name) {
+				return 'Hello ' + name;
+			}
+			console.log(sayHello('Chirat'));
+			*/
+
+			// ## Array
+			// let fruits = ['Apple', 'Banana', 'Orange', 'Pineapple'];
+			// console.log('ตอนนี้ฉันมี', fruit[0], fruit[1], fruit[2]);
+			// console.log('ตอนนี้ฉันมี', fruits.length);
+
+			// fruits.push('Mango');
+			// fruits.push('Tangmo');
+			// fruits.push(prompt('Enter your fruit:'));
+			// console.log('ตอนนี้ฉันมี', ...fruits);
+
+			// fruits.pop();
+			// fruits.pop();
+			// console.log('ตอนนี้ฉันมี', ...fruits);
+
+			// let temp1 = fruits.pop();
+			// let temp2 = fruits.pop();
+			// console.log(temp1);
+			// console.log(temp2);
+
+			// console.log(fruits.pop());
+			// console.log('ตอนนี้ฉันมี', ...fruits);
+
+			// console.log(fruits.indexOf('Orange'));
+			// console.log(fruits.indexOf('Oran'));
+
+			// if(fruits.indexOf  (prompt('Enter fruit')) != -1){
+			// 	alert('✅ มีผลไม้ชนิดนี็อยู่ใน Array')
+			// }else{
+			// 	alert('❎ ไม่มีผลไม้ชนิดนี้อยู่ใน Array')
+			// }
+
+			// fruits.push('Mango');
+			// fruits.push('Water melon');
+
+			// for(let i = 0; i < 4; i++) {
+			// 	console.log(fruits[i]);
+			// }
+
+			// fruits.reverse();
+
+			// for (let i = 0; i < fruits.length; i++) {
+			// 	console.log(fruits[i]);
+			// }
+
+			/*
+			function isEven(number) {
+				return number % 2 == 0;
+			}
+			console.log(isEven(10));
+			console.log(isEven(11));
+			*/
+
+			/*
+			function celsiusToFahrenheit(celsius) {
+				return (celsius * 9) / 5 + 32;
+			}
+			console.log(celsiusToFahrenheit(20));
+			*/
+
+			/*
+			function maxOfTwo(a, b) {
+				if(a>b){
+					return a
+				}else{
+					return b
+				}
+			}
+			*/
+
+			/*
+			function minOfTwo(a, b) {
+				return a > b ? a : b;
+			}
+			*/
+
+			/*
+			let myVariable = 10;
+			function myFunction(x) {
+				x = x + 1;
+				return x;
+			}
+
+			console.log(myFunction(myVariable));
+			console.log(myVariable);
+			*/
+
+			// ## Map
+			/*
+			const myMap = new Map();
+
+			myMap.set('name', 'Prame');
+			myMap.set('lastname', 'Test');
+
+			console.log(myMap);
+			console.log(myMap.get('name'));
+			console.log(myMap.get('lastname'));
+			console.log(myMap.size);
+			*/
+
+			/*
+			let map2 = new Map([
+				['apple', 1],
+				['banana', 2],
+			]);
+
+			console.log(map2);
+
+			for (let [key, value] of map2) {
+				console.log(`Key: ${key}, Value: ${value}`);
+			}
+
+			console.log(map2.has('apple'));
+			console.log(map2.delete('banana'));
+
+			let userKey = prompt('Enter key');
+			let userValue = prompt('Enter value');
+			map2.set(userKey, userValue);
+			console.log(map2);
+			*/
+
+			/*
+			// ## Set
+			const fruits = new Set();
+
+			fruits.add('Apple');
+			fruits.add('Banana');
+			fruits.add('Orange');
+			fruits.add('Apple');
+			fruits.add('Apple');
+
+			console.log(fruits);
+			console.log(...fruits);
+
+			for (let fruit of fruits) {
+				console.log(fruit);
+			}
+
+			console.log(fruits.has('Apple'));
+			console.log(fruits.delete('Apple'));
+			console.log(fruits);
+			*/
+
+			// ## OOP ##
+			class Tiger {
+				constructor(name, age, weight) {
+					this.name = name; //Property
+					this.age = age; //Property
+					this.weight = weight; //Property
+				}
+
+				roar() {
+					//Method
+					console.log(`${this.name} roars!`);
+				}
+
+				eat(pounds) {
+					//Method
+					this.weight += pounds;
+					console.log(`${this.name} eat ${pounds} pounds of food.`);
+				}
+			}
+
+			const rajah = new Tiger('Rajah', 5, 450); //Instance
+			rajah.roar(); // => Rajah rors!
+			rajah.eat(5); // => Rajah eat 5 pounds of food.
+
+			const redTiger = new Tiger('Red Tiger', 5, 300); //Instance
+			redTiger.roar(); // => Red Tiger rors!
+			redTiger.eat(10); // => Red Tiger eat 10 pounds of food.
+
+			const blueTiger = new Tiger('Blue Tiger', 5, 350); //Instance
+			blueTiger.roar(); // => Blue Tiger rors!
+			blueTiger.eat(15); // => Blue Tiger eat 15 pounds of food.
+		</script>
+	</body>
+</html>
